@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+
+        table{
+            text-align: center;
+            border-collapse: collapse;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    
+
+<table border="1">
+    <thead >
+        <tr>
+            <th>T/r</th>
+            <th>Familyasi</th>
+            <th>Ismi</th>
+            <th>Rasmi</th>
+            <th>Yoshi</th>
+            <th>Qiziqishi</th>
+        </tr>
+    </thead>
+
+    <tbody id="tbody">
+        <tr>
+            <!-- <td>1</td>
+            <td>Sunnatillayev</td>
+            <td>Diyorbek</td>
+            <td><img width="50px" src="data:image/png;base64,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" alt=""></td>
+            <td>17</td>
+            <td>Listening News</td> -->
+
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
